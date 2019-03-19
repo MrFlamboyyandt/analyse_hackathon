@@ -1,6 +1,7 @@
 def sum_array(array):
 
-    '''Calculate the sum of elements in an array
+    '''
+    Calculate the sum of elements in an array
     
     Args:
         array (array)
@@ -31,7 +32,7 @@ def fibonacci(n):
              equal to sum of previous two terms
     
     Examples:
-        >>> fibonacci(1)
+        >> fibonacci(1)
         1        
         >> fibonacci(2)
         1
@@ -47,7 +48,8 @@ def fibonacci(n):
 
 def factorial(n):
 
-    '''Calculate the factorial of n
+    '''
+    Calculate the factorial of n
     
     Args:
         n (int)
@@ -82,11 +84,11 @@ def reverse(word):
         string: word in reverse
     
     Examples:
-        >>reverse('foo')
+        >> reverse('foo')
         'oof'
-        >>reverse('bar')
+        >> reverse('bar')
         'rab'
-        >>reverse('python')
+        >> reverse('python')
         'nohtyp'
     '''
     return word[-1] + reverse(word[:-1]) if word else ''    # reverse letters in word recursively
