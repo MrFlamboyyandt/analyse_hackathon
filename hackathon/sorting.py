@@ -1,5 +1,17 @@
 def bubble_sort(items):
-    '''Return array of items, sorted in ascending order'''
+    '''
+    Return array of items, sorted in ascending order by the bubble sort method
+    
+    Args:
+        items (array)
+
+    Returns:
+        array (ascending order)
+
+    Example:
+        >> bubble_sort([54,26,93,17,77,31,44,55,20,52]) 
+        [17, 20, 26, 31, 44, 52, 54, 55, 77, 93]
+    '''
     for item in range(len(items)-1,0,-1):
         for i in range(item):
             if items[i]>items[i+1]:
@@ -9,7 +21,20 @@ def bubble_sort(items):
     return items
 
 def merge_sort(items):
-    '''Return array of items, sorted in ascending order'''
+    '''
+    Return array of items, sorted in ascending order by the merge sort method
+    
+    Args:
+        items (array)
+
+    Returns:
+        array (ascending order)
+
+    Example:
+        >> merge_sort([54,26,93,17,77,31,44,55,20,52]) 
+        [17, 20, 26, 31, 44, 52, 54, 55, 77, 93]
+    '''
+
     if len(items)>1:
         mid = len(items)//2
         left = items[:mid]
@@ -43,10 +68,23 @@ def merge_sort(items):
         return items
 
 def quick_sort(items):
-    '''Return array of items, sorted in ascending order'''
+    '''
+    Return array of items, sorted in ascending order by the quick sort method
+    
+    Args:
+        items (array)
+
+    Returns:
+        array (ascending order)
+
+    Example:
+        >> quick_sort([54,26,93,17,77,31,44,55,20,52]) 
+        [17, 20, 26, 31, 44, 52, 54, 55, 77, 93]
+    '''
 
     def quick_sort_helper(items,first,last):
-       if first<last:
+    
+        if first<last:
 
            splitpoint = partition(items,first,last)
 
