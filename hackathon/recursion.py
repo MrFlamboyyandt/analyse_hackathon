@@ -67,7 +67,7 @@ def factorial(n):
     '''
 
     if n == 0:       # catch end of recursion
-        return n
+        return 1
     elif n == 1:
         return n
     else:
